@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 비교연산자 : >, <, >=, <=, ==, !=, ===, !== */
+
+      let numX = 5;
+      let numY = 5;
+      // == 는 메모리에 저장된 값만 비교한다
+      console.log(`numX==numY:${numX == numY}`); //numX == numY:true
+      console.log(`numX===numY:${numX === numY}`); //numX === numY:true
+      // === 메모리에 저장된 값과 타입을 비교한다 (한개라도 맞지않을시 false)
+      let objX = new Number(numX);
+      let objY = new Number(numY);
+      console.log(`objX==objY:${objX == objY}`); // objX == objY:false
+      console.log(`objX===objY:${objX === objY}`); // objX === objY:false
+
+      let dataX = 3;
+      let dataY = "3";
+      console.log(`dataX==dataY:${dataX == dataY}`); // dataX==dataY:true
+      console.log(`dataX===dataY:${dataX === dataY}`); // dataX===dataY:false
+    </script>
+  </body>
+</html>

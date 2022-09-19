@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* 
+        - 연산자: 계산에 사용되는 기호(+, -, *, /, %, >, <)
+        - 피연산자: 계산에 사용되는 값(숫자)
+
+        산술연산자 : +, -, *, /, %, ++(증가), --(감소)
+        */
+
+      let numX = 3;
+      let numY = 4;
+      let sum = numX + numY;
+      console.log(`sum=${sum}`);
+      console.log(`numX-numY=${numX - numY}`);
+      console.log(`numX*numY=${numX * numY}`);
+      console.log(`numX/numY=${numX / numY}`);
+      console.log(`numX%numY=${numX % numY}`);
+      console.log(`numX%numY=${parseInt(numX) % parseInt(numY)}`);
+      console.log(`numX=${++numX}`); // 4
+      console.log(`numX=${numX++}`); // 4
+      console.log(`numX=${numX}`); // 5
+      console.log(`numY=${numY ** 2}`); // numY = 16
+    </script>
+  </body>
+</html>

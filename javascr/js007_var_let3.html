@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js007_var_let3.html</title>
+  </head>
+  <body>
+    <script>
+      //   var foo;
+      // Uncaught ReferenceError: foo is not defined
+      //   변수 선언전 -> uncaught foo is not defined
+      //        선언후 -> foo: undefined
+      console.log(`foo:${foo}`);
+
+      //   Uncaught ReferenceError: bar is not defined
+      //                            cannot access 'bar' before initialization
+      console.log(`bar:${bar}`);
+
+      var foo;
+      let bar;
+    </script>
+  </body>
+</html>
