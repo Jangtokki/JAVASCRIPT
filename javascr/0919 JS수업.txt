@@ -54,6 +54,26 @@ p.13   a=3  ->   a□ 이렇게 메모리 공간이 지정되면서
 p.15
      호이스팅 대상
 
+9/19 요약
+식별자(identifiers) : 프로그램에 구현에 필요한 이름을 정의 - 변수명, 함수명, 클래스명
+변수명, 함수명 - 카멜표기법
+클래스명 - 파스칼
 
+변수(variable) : 데이터를 저장하기 위한 메모리
 
+let num = 3 + 5;
+
+키워드, 예약어(keyword) - 프로그램에서 의미를 부여해서 정의해놓은 단어
+let, var, const
+
+operactor (연산자) : 연산을 하기 위해서 사용되는 기호 (산술, 비교, 논리, 조건, 대입)
+operand (피연산자) : 연산에 사용되는 데이터를
+자료형 (Data Type) - 데이터의 종류
+     (1) primitive Type - 숫자, 문자, 논리, undefined, null, symbol
+     (2) reference Type - 배열[], 객체{}, function
+
+호이스팅(hoisting) - 변수선언을 최상위로 끌어올리는 작업
+
+9/20 요약
+익스텐션 -> code run 설치
 
