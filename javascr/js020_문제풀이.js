@@ -6,7 +6,6 @@
    10
  */
 
-let num = -10;
 // if (num % 10 == 0) {
 // }
 
@@ -19,12 +18,10 @@ let num = -10;
 //   console.log(num);
 // }
 
-if (num % 10 == 0) {
-  1;
-} else {
-  0;
-}
-console.log(num);
+let num = 10;
+let bit = num % 10 == 0 ? 1 : 0;
+
+console.log(bit);
 
 /*
   [문제2]
@@ -36,9 +33,15 @@ console.log(num);
     필요한 바구니의 수 : 13
  */
 
+//나의답안
 let a = 123;
 let b = 10;
+let c;
 console.log(`필요한 바구니의 수 : ${parseInt(a / b + 1)}`);
+
+//정답
+c = a % b == 0 ? parseInt(a / b) : parseInt(a / b) + 1;
+console.log(`${c}`);
 
 /*
   [문제3]
@@ -56,6 +59,8 @@ console.log(`필요한 바구니의 수 : ${parseInt(a / b + 1)}`);
   2. 출력결과
   	   차량번호의 끝자리가 5인 차량은 금요일 운행을 제한합니다.
  */
+
+//나의답안
 let cnum = 1;
 switch (cnum) {
   case 1:
@@ -79,6 +84,32 @@ switch (cnum) {
     console.log(`끝자리가 ${cnum}인 차량은 금요일 운행을 제한합니다.`);
 }
 
+//정답
+let cnum2 = 1;
+let day;
+switch (cnum) {
+  case 1:
+  case 2:
+    day = "월요일";
+    break;
+  case 2:
+  case 7:
+    day = "화요일";
+    break;
+  case 3:
+  case 8:
+    day = "수요일";
+    break;
+  case 4:
+  case 7:
+    day = "목요일";
+    break;
+  case 5:
+  case 6:
+    day = "금요일";
+}
+console.log(`끝자리가 ${cnum2}인 차량은 ${day} 운행을 제한합니다.`);
+
 /*
  [문제4] 
   2001부터 2012년사이에서 윤년을 구하시오.
@@ -91,9 +122,18 @@ switch (cnum) {
   2008
   2012
  */
+//나의답안
 for (let y = 2001; y <= 2012; y++) {
   if (y % 4 == 0 && y % 100 != 0) {
     console.log(`${y}`);
+  }
+}
+
+//정답
+for (let year = 2001; year <= 2012; year++) {
+  let yearcheck = (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+  if (yearcheck) {
+    console.log(`${year}년도는 윤년입니다.`);
   }
 }
 
@@ -106,3 +146,11 @@ for (let y = 2001; y <= 2012; y++) {
  *  x=2, y=2
  *  x=5, y=0
  */
+
+for (let x = 0; x <= 10; x++) {
+  for (let y = 0; y <= 10; y++) {
+    if (2 * x + 3 * y == 10) {
+      console.log(`x=${x},y=${y}`);
+    }
+  }
+}
