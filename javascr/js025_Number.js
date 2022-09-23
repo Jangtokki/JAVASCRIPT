@@ -24,4 +24,4 @@ console.log(Number(val) + Number(val)); //20.6
 console.log(parseInt(val) + parseInt(val)); //20
 console.log(parseFloat(val) + parseFloat(val)); //20.6
 
-console.log(Number.POSITIVE_INFINITY);
+console.log(Number.POSITIVE_INFINITY); //무한대값
