@@ -11,3 +11,14 @@ let pNode = document.getElementsByTagName("p");
 console.log(pNode, typeof pNode);
 console.log(pNode.length);
 console.log(pNode[0], pNode.item(0));
+console.log(pNode[0].innerText);
+
+pNode[1].style.backgroundColor = "red";
+
+function process() {
+  let fname = document.frm.fname;
+  console.log("fname:", fname);
+  console.log(fname.value);
+  console.log(fname.defaultValue);
+  return false;
+}

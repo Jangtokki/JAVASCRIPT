@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>document</title>
     <script defer src="js034_dom.js"></script>
+    <style>
+      p:nth-of-type(1) {
+        background-color: yellow;
+      }
+    </style>
   </head>
   <body>
     <h1 id="selector" class="choice">선택자</h1>
@@ -14,5 +19,11 @@
     <p>content2</p>
     <p>content3</p>
     <p>content4</p>
+
+    <form name="frm">
+      <input type="text" name="frname" placeholder="이름입력" value="홍길동" />
+      <input type="text" name="fpass" placeholder="비밀번호 입력" />
+      <button onclick="return process()">click</button>
+    </form>
   </body>
 </html>
