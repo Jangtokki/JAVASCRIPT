@@ -12,20 +12,17 @@ let arr = [1, 2, 3, undefined, 4, undefined, undefined, 5];
 */
 
 let arr = [1, 2, 3, undefined, 4, undefined, undefined, 5];
-function getSum(total, num) {
-  return total + (num || 0);
-}
 
-let sum = arr.reduce(getSum);
+let result = arr.filter(function (element) {
+  return element != undefined;
+});
+
+let sum = result.reduce(function (total, element) {
+  return total + element;
+});
+
 console.log(`합계 : ${sum}`);
-
-let sum2 = sum / arr.length;
-
-console.log(`평균 : ${sum2}`);
-
-//total = arr.reduce(function (s, v) {
-// return s + (v || 0);
-//}, 0);
+console.log(`평균 = ${sum / result.length}`);
 
 /*
  [문제2] 
@@ -47,12 +44,22 @@ let arr2 = [
   ["이영희", 100, 35, 75],
 ];
 
-a = arr2[0];
-b = arr2[1];
+for (let i = 0; i < arr2.length; i++) {
+  let fullname, jumsu;
+  [fullname, ...jumsu] = arr2[i];
+  let hap = jumsu.reduce(function (total, element) {
+    return total + element;
+  });
 
-let c;
-function getSum2(total, num) {
-  return total + (num || 0);
+  arr2[i].push(hap);
+  arr2[i].push((hap / jumsu.length).toFixed(2));
 }
-let sum3 = a.reduce(getSum2);
-console.log(`${sum3}`);
+
+console.log(arr2);
+
+let lastEle = arr2.map((element) => {
+  return element[element.length - 1];
+});
+
+console.log(lastEle);
+console.log(`최고점: ${Math.max(...lastEle)}`);
