@@ -1,7 +1,12 @@
-let btn = document.querySelector("#btn");
+let btn = document.getElementsByTagName("button")[0];
 btn.onclick = () => {
-  let date = new Date();
   let Node = document.getElementsByTagName("p")[0];
-  Node.innerHTML = date;
-  document.date.submit();
+  let year = today.getFullYear();
+  let month = today.getMonth();
+  let date = today.getDate();
+  let hour = today.getHours();
+  let minute = today.getMinute();
+  let second = today.getSecond();
+
+  Node.innerText = `${year}-${month}-${date}-${hour}-${minute}-${second}`;
 };
