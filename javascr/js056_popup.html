@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #popup {
+        width: 301px;
+        height: 351px;
+        border: 1px solid;
+        position: fixed;
+        left: 30%;
+        top: 100px;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <div>
+      <p>
+        조사 결과, 돈스파이크는 지난 4월부터 강남 등 일대를 돌아다니며 호텔
+        파티룸을 빌려 수차례 마약을 투약한 것으로 확인됐다. 남녀 지인들과 호텔을
+        바꿔가며 투약했는데 경찰의 수사망을 피하기 위해 그런 것인지는 아직까지
+        확인되지 않았다.조사 결과, 돈스파이크는 지난 4월부터 강남 등 일대를
+        돌아다니며 호텔 파티룸을 빌려 수차례 마약을 투약한 것으로 확인됐다. 남녀
+        지인들과 호텔을 바꿔가며 투약했는데 경찰의 수사망을 피하기 위해 그런
+        것인지는 아직까지 확인되지 않았다.조사 결과, 돈스파이크는 지난 4월부터
+        강남 등 일대를 돌아다니며 호텔 파티룸을 빌려 수차례 마약을 투약한 것으로
+        확인됐다. 남녀 지인들과 호텔을 바꿔가며 투약했는데 경찰의 수사망을
+        피하기 위해 그런 것인지는 아직까지 확인되지 않았다.조사 결과,
+        돈스파이크는 지난 4월부터 강남 등 일대를 돌아다니며 호텔 파티룸을 빌려
+        수차례 마약을 투약한 것으로 확인됐다. 남녀 지인들과 호텔을 바꿔가며
+        투약했는데 경찰의 수사망을 피하기 위해 그런 것인지는 아직까지 확인되지
+        않았다.조사 결과, 돈스파이크는 지난 4월부터 강남 등 일대를 돌아다니며
+        호텔 파티룸을 빌려 수차례 마약을 투약한 것으로 확인됐다. 남녀 지인들과
+        호텔을 바꿔가며 투약했는데 경찰의 수사망을 피하기 위해 그런 것인지는
+        아직까지 확인되지 않았다.조사 결과, 돈스파이크는 지난 4월부터 강남 등
+        일대를 돌아다니며 호텔 파티룸을 빌려 수차례 마약을 투약한 것으로
+        확인됐다. 남녀 지인들과 호텔을 바꿔가며 투약했는데 경찰의 수사망을
+        피하기 위해 그런 것인지는 아직까지 확인되지 않았다.조사 결과,
+        돈스파이크는 지난 4월부터 강남 등 일대를 돌아다니며 호텔 파티룸을 빌려
+        수차례 마약을 투약한 것으로 확인됐다. 남녀 지인들과 호텔을 바꿔가며
+        투약했는데 경찰의 수사망을 피하기 위해 그런 것인지는 아직까지 확인되지
+        않았다.
+      </p>
+      <div id="popup">
+        <img src="images/popup.jpg" username="#pop" />
+      </div>
+      <map name="pop" id="pop">
+        <!-- coords="X start, Y start, X end, Y end" -->
+        <area shape="rect" coords="255,332,290,345" href="#" alt="창닫기" />
+      </map>
+    </div>
+    <script>
+      let close = document.querySelector("map#pop area");
+      close.onclick = () => {
+        let popup = document.querySelector("div#popup");
+        popup.style.width = "0px";
+        popup.style.height = "0px";
+        popup.style.visibility = "hidden";
+      };
+    </script>
+  </body>
+</html>
