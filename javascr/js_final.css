@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.rg {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+/* 우측상단 각 항목 가로 50px 버튼 5개 */
+.headerTop {
+  width: 200px;
+  height: 25px;
+}
+
+/* 메인로고 이미지 */
+.headerTop2 {
+  width: 1200px;
+  height: 100px;
+  background-color: blue;
+}
+
+/* 하단 카테고리 */
+.headerTop3 {
+  width: 1200px;
+  height: 35px;
+  background-color: blueviolet;
+}
