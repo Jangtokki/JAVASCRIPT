@@ -30,7 +30,7 @@ a {
   text-align: center;
 }
 
-#gallery ul {
+#inner_list {
   width: 800px;
   margin: 0 auto;
   /* background-color: #999; */
@@ -46,6 +46,7 @@ a {
 #gallery div#photo_list {
   width: 300px;
   margin: 10px auto;
+  background-color: aqua;
 
   overflow: hidden;
 }
